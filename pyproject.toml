@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lord-sumi-release-notary"
+version = "0.1.0"
+description = "Generate and verify SHA-256 release manifests"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Lord_Sumi"}]
+
+[project.scripts]
+release-notary = "release_notary:main"
+
+[tool.setuptools]
+py-modules = ["release_notary"]
